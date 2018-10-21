@@ -1,0 +1,28 @@
+form{
+    padding-left: 20px;
+}
+
+.getStartedText{
+    padding-left: 20px;
+}
+
+.jumbotron{
+    text-align: center;
+    background:url(../images/civil-war-battle.jpeg);
+    background-repeat: no-repeat;
+    /*Used background-size:cover, because i did not want the photo to stretch*/
+    background-size: cover; 
+    
+}
+
+.display-3{
+font-family: 'Times New Roman', Times, serif;
+}
+
+.lead{
+    color: black;
+}
+
+.btn{
+    font-family: 'Times New Roman', Times, serif;  
+}

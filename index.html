@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TriviaGame</title>
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+  <body>
+      <div class="jumbotron">
+          <h1 class="display-3">Civil War Trivia</h1>
+          <!--The <p class="lead"> was included in the jumbotron but i felt there was xto much text in the jumbotron and it started to look cluttered.-->
+          <!--<p class="lead">How much do you know about the Civil War? Try to complete as many questions as you can, before time runs out.</p>-->
+          <br>
+          <br>
+          <br>
+          <a class="btn btn-primary btn-md" href="#" onclick= "startButton()" role="button">START</a>
+        </div>
+        
+        <p class="getStartedText"> You have <span id="countdowntimer">60</span> seconds to complete this trivia game, good luck!</p>
+        
+        
+        <form id ="trivia" name="trivia">
+                <p>1. What Civil War battle caused the most casualties? </p>
+                <input type="radio" id="multipleChoice" name="question1" value="Gettysburg"> Gettysburg<br>
+                <input type="radio" id="multipleChoice" name="question1" value="Shiloh"> Shiloh<br>
+                <br>
+                <p>2. What was the first state to secede from the Union? </p>
+                <input type="radio" id="multipleChoice" name="question2" value="South Carolina"> South Carolina<br>
+                <input type="radio" id="multipleChoice" name="question2" value="Alabama"> Alabama<br>
+                <br>
+                <p>3. How long did it take Abraham Lincoln to deliver his famous Gettysburg Address? </p>
+                <input type="radio" id="multipleChoice" name="question3" value="2 Minutes"> 2 Minutes<br>
+                <input type="radio" id="multipleChoice" name="question3" value="4 Minutes"> 4 Minutes<br>
+                <br>
+                <p>4. What first appeared on a U.S. coin during the Civil War? </p>
+                <input type="radio" id="multipleChoice" name="question4" value="Abraham Lincoln"> Abraham Lincoln<br>
+                <input type="radio" id="multipleChoice" name="question4" value="In God We Trust"> In God We Trust<br>
+                <br>
+                <p>5. What Native American tribe was allied with the Confederacy during the Civil War? </p>
+                <input type="radio" id="multipleChoice" name="question5" value="Cherokee"> Cherokee<br>
+                <input type="radio" id="multipleChoice" name="question5" value="Comranoka"> Comranoka<br>
+                <br>
+                <p>6. Who served as the Secretary of State during the Civil War? </p>
+                <input type="radio" id="multipleChoice" name="question6" value="Montgomery Blair"> Montgomery Blair<br>
+                <input type="radio" id="multipleChoice" name="question6" value="William Seward"> William Seward<br>
+                <br>
+                <p>7. What southern slave stole a Confederate military ship? </p>
+                <input type="radio" id="multipleChoice" name="question7" value="Miles James"> Miles James<br>
+                <input type="radio" id="multipleChoice" name="question7" value="Robert Smalls"> Robert Smalls<br>
+                <br>
+                <p>8. Who was the last man killed in the U.S. Civil War? </p>
+                <input type="radio" id="multipleChoice" name="question8" value="Albert Poole"> Albert Poole<br>
+                <input type="radio" id="multipleChoice" name="question8" value="John J. Williams"> John J. Williams<br>
+                <br>
+                <p>9. How many Native Americans fought in the Civil War? </p>
+                <input type="radio" id="multipleChoice" name="question9" value="28,693"> 28,693<br>
+                <input type="radio" id="multipleChoice" name="question9" value="2,869"> 2,869<br>
+                <br>
+                <p>10. How much were Union privates paid per month during the Civil War? </p>
+                <input type="radio" id="multipleChoice" name="question10" value="$11.00"> $11.00<br>
+                <input type="radio" id="multipleChoice" name="question10" value="$13.00"> $13.00<br>
+                <br>
+                <input type="button" id="button" value ="Complete" onclick ="verify()">
+              </form>
+        
+              <div id ="after_submit">
+              <p id = "howManyCorrect"></p>
+              <br>
+            
+            </div>
+  </body>
+</html>
