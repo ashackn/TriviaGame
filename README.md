@@ -8,3 +8,5 @@ The timer is located in a span in th paragraph tag with a id of countdownTimer. 
 If you complete all questions before the time runs out, please click the submit button.
 I decided to have all the questions on one page to make it easier for the user to skip around. If i were to have a question appear one at a time i would use (.fadeIn .fadeOut .hide) in a function. 
 The trivia questions were found on multiple Civil War game websites.
+Deployed site linked below.
+https://ashackn.github.io/TriviaGame/
